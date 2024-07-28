@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Assignment_3_skeleton
 {
+    [Serializable]
     public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-
         public string Password;
 
         //Initializes a User object.
@@ -56,11 +56,11 @@ namespace Assignment_3_skeleton
         public bool equals(Object obj)
         {
             if (!(obj is User))
-			return false;
+                return false;
 
             User other = (User)obj;
 
-            return Id == other.Id && Id.Equals(other.Name) && Id.Equals(other.Email);
+            return Id == other.Id && Name.Equals(other.Name) && Email.Equals(other.Email);
         }
     }
 }
