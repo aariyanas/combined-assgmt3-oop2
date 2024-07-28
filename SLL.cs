@@ -8,6 +8,10 @@ namespace Assignment_3_skeleton
 {
     public class SLL : LinkedListADT
     {
+        private Node head;
+        private Node tail;
+        private int size;
+
         public void Append(object data)
         {
             throw new NotImplementedException();
